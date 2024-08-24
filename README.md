@@ -2,6 +2,21 @@
 
 This API provides a system for managing tasks with role-based access control. The API supports user registration, authentication, task creation, retrieval, updating, and deletion. The system has two primary roles: `admin` and `user`.
 
+## Features
+
+- **User Registration & Authentication:** Users can register and log in to the system.
+- **Role-Based Access Control:** Admin and User roles are supported. Admins have additional permissions, such as deleting tasks.
+- **Task Management:** Users can create, view, update, and delete tasks.
+- **JWT Authentication:** Secure routes with JSON Web Tokens.
+- **Database:** Uses SQLite with TypeORM for database management.
+
+## Technologies Used
+
+- **Backend:** Node.js, Express.js
+- **Database:** SQLite with TypeORM
+- **Authentication:** JWT (JSON Web Tokens)
+- **Environment Variables:** Managed with `dotenv`
+
 ## Roles and Permissions
 
 ### Admin
