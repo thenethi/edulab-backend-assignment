@@ -34,7 +34,7 @@ AppDataSource.initialize()
 
 app.get("/", async (req, res) => {
   res.send(
-    `Welcome to the Task Management API. Please refer to the [GitHub repository](https://github.com/thenethi/edulab-backend-assignment.git) for more details.`
+    `Welcome to the Task Management API. Please refer to the https://github.com/thenethi/edulab-backend-assignment.git for more details.`
   );
 });
 
