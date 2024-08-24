@@ -32,6 +32,12 @@ AppDataSource.initialize()
     console.error("Error during Data Source initialization", err);
   });
 
+app.get("/", async (req, res) => {
+  res.send(
+    `Welcome to the Task Management API. Please refer to the [GitHub repository](https://github.com/thenethi/edulab-backend-assignment.git) for more details.`
+  );
+});
+
 // Auth routes
 app.post("/register", authController.registerUser);
 app.post("/login", authController.loginUser);
